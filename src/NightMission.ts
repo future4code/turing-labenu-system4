@@ -3,6 +3,7 @@ import { Student } from './Student'
 import { Teacher } from './Teacher'
 
 import moment from 'moment'
+import { missionTuring } from './FullTimeMission'
 
 export class NightMission extends Mission {
     constructor (
@@ -24,3 +25,10 @@ export class NightMission extends Mission {
         }
     }
 }
+
+export const startDateTang: moment.Moment = moment("18/05/2020", "DD/MM/YYYY")
+export const endDateTang: moment.Moment = moment("13/05/2020", "DD/MM/YYYY")
+export const teachers: Teacher[] = []
+export const students: Student[] = []
+
+export const missionTang: NightMission = new NightMission("2", startDateTang, endDateTang, teachers, students)

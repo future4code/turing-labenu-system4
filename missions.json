@@ -2,99 +2,81 @@
    {
       "id": "1",
       "startDate": "2020-05-18T03:00:00.000Z",
-      "endDate": "2020-11-13T03:00:00.000Z",
+      "endDate": "2020-05-13T03:00:00.000Z",
       "teachers": [
          {
             "id": "1",
-            "name": "Mateus Gesualdo",
-            "email": "mateus@lbn.com",
+            "name": "Florinda",
+            "email": "florinda@gmail.com",
             "specialties": [
-               "BACKEND",
-               "OOP"
-            ]
-         },
-         {
-            "id": "1",
-            "name": "Amanda Rangel",
-            "email": "amanda@lbn.com",
-            "specialties": [
-               "BACKEND",
-               "OOP"
+               "TESTES",
+               "CSS",
+               "REDUX"
             ]
          }
       ],
       "students": [
          {
             "id": "1",
-            "name": "Diego Molinari",
-            "email": "diego@lbn.com",
-            "birthDate": "1990-11-15T02:00:00.000Z",
+            "name": "Chaves",
+            "email": "chaves@gmail.com",
+            "birthDate": "1980-02-02T03:00:00.000Z",
             "hobbies": [
-               "Pescar",
-               "Programação"
+               "Jorgar bola",
+               "comer"
             ]
          },
          {
             "id": "2",
-            "name": "Julio",
-            "email": "julio@lbn.com",
-            "birthDate": "1990-11-15T02:00:00.000Z",
+            "name": "kico",
+            "email": "kico@gmail.com",
+            "birthDate": "1981-08-03T03:00:00.000Z",
             "hobbies": [
-               "Pescar",
-               "Programação"
+               "Dançar",
+               "Dormir"
             ]
          }
       ],
-      "currentModule": 4,
-      "name": "TURING"
+      "name": "Turing"
    },
    {
-      "id": "1",
+      "id": "2",
       "startDate": "2020-05-18T03:00:00.000Z",
-      "endDate": "2020-11-13T03:00:00.000Z",
+      "endDate": "2020-05-13T03:00:00.000Z",
       "teachers": [
          {
-            "id": "1",
-            "name": "Mateus Gesualdo",
-            "email": "mateus@lbn.com",
+            "id": "2",
+            "name": "Madruga",
+            "email": "madruga@gmail.com",
             "specialties": [
+               "REACT",
                "BACKEND",
-               "OOP"
-            ]
-         },
-         {
-            "id": "1",
-            "name": "Amanda Rangel",
-            "email": "amanda@lbn.com",
-            "specialties": [
-               "BACKEND",
-               "OOP"
+               "REDUX"
             ]
          }
       ],
       "students": [
          {
-            "id": "1",
-            "name": "Diego Molinari",
-            "email": "diego@lbn.com",
-            "birthDate": "1990-11-15T02:00:00.000Z",
+            "id": "3",
+            "name": "Chiquinha",
+            "email": "chiquinha@gmail.com",
+            "birthDate": "0085-11-28T03:06:28.000Z",
             "hobbies": [
-               "Pescar",
-               "Programação"
+               "estudar",
+               "ler"
             ]
          },
          {
-            "id": "2",
-            "name": "Julio",
-            "email": "julio@lbn.com",
-            "birthDate": "1990-11-15T02:00:00.000Z",
+            "id": "4",
+            "name": "Nhonho",
+            "email": "nhonho@gmail.com",
+            "birthDate": "1989-12-01T02:00:00.000Z",
             "hobbies": [
-               "Pescar",
-               "Programação"
+               "comer",
+               "cozinhar"
             ]
          }
       ],
-      "currentModule": 4,
-      "name": "TANG-na-night"
+      "name": ""
    }
 ]
