@@ -7,8 +7,8 @@ export class Student implements User {
     public id: string,
     public name: string,
     public email: string,
-    private birthDate: moment.Moment,
-    private hobbies: string[],
+    public birthDate: moment.Moment,
+    public hobbies: string[],
   ) {}
 
   //Pelo id do estudante pegar a idade
@@ -16,6 +16,7 @@ export class Student implements User {
   public getAge() {
     return moment().diff(this.birthDate, 'years');
   }
+
 }
 
 export const student1 = new Student(

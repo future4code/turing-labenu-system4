@@ -20,6 +20,18 @@ export class FileManager {
     return JSON.parse(data.toString());
   }
 
+  public getStudentId(studentId: string): void {
+    this.setFilePath('students.json')
+    const students = this.readFile()
+
+    students.forEach((student: Student) => {
+      if (student.id === studentId) {
+        const newStudent: Student = new Student(student.id, student.name, student.name, student.birthDate, student.hobbies)
+        console.log(`A idade do estudante ${newStudent.name} é de: ${newStudent.getAge()}`)
+      }
+    })
+  }
+
   public registerInJson(classInstance: Student | Teacher | Mission) {
     let classI: (Student | Teacher | Mission)[] = [];
     try {
