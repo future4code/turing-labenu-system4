@@ -1,4 +1,8 @@
 import fs from "fs"
+import {Student} from "./Student";
+import {Teacher} from "./Teacher";
+import {Mission} from "./Mission";
+
 
 export class FileManager {
   constructor(private filePath: string) {}
@@ -15,17 +19,21 @@ export class FileManager {
     const data = fs.readFileSync(this.filePath);
     return JSON.parse(data.toString());
   }
+
+  public registerInJson(classInstance: Student | Teacher | Mission) {
+    let classI: (Student | Teacher | Mission)[] = [];
+    try {
+      classI = this.readFile();
+    } catch (e) {
+      if(e) {
+        this.writeFile(classI)
+      }
+    }
+    classI.push(classInstance);
+    return this.writeFile(classI)
+  }
 }
 
-const fm = new FileManager("arquivo");
 
-// imprime as infos do arquivo
-console.log(fm.readFile());
 
-fm.setFilePath("outro-arquivo");
 
-// escreve no arquivo
-fm.writeFile({
-  id: "1",
-  name: "Goli",
-});
