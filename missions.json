@@ -1,1 +1,100 @@
-[]
+[
+   {
+      "id": "1",
+      "startDate": "2020-05-18T03:00:00.000Z",
+      "endDate": "2020-11-13T03:00:00.000Z",
+      "teachers": [
+         {
+            "id": "1",
+            "name": "Mateus Gesualdo",
+            "email": "mateus@lbn.com",
+            "specialties": [
+               "BACKEND",
+               "OOP"
+            ]
+         },
+         {
+            "id": "1",
+            "name": "Amanda Rangel",
+            "email": "amanda@lbn.com",
+            "specialties": [
+               "BACKEND",
+               "OOP"
+            ]
+         }
+      ],
+      "students": [
+         {
+            "id": "1",
+            "name": "Diego Molinari",
+            "email": "diego@lbn.com",
+            "birthDate": "1990-11-15T02:00:00.000Z",
+            "hobbies": [
+               "Pescar",
+               "Programação"
+            ]
+         },
+         {
+            "id": "2",
+            "name": "Julio",
+            "email": "julio@lbn.com",
+            "birthDate": "1990-11-15T02:00:00.000Z",
+            "hobbies": [
+               "Pescar",
+               "Programação"
+            ]
+         }
+      ],
+      "currentModule": 4,
+      "name": "TURING"
+   },
+   {
+      "id": "1",
+      "startDate": "2020-05-18T03:00:00.000Z",
+      "endDate": "2020-11-13T03:00:00.000Z",
+      "teachers": [
+         {
+            "id": "1",
+            "name": "Mateus Gesualdo",
+            "email": "mateus@lbn.com",
+            "specialties": [
+               "BACKEND",
+               "OOP"
+            ]
+         },
+         {
+            "id": "1",
+            "name": "Amanda Rangel",
+            "email": "amanda@lbn.com",
+            "specialties": [
+               "BACKEND",
+               "OOP"
+            ]
+         }
+      ],
+      "students": [
+         {
+            "id": "1",
+            "name": "Diego Molinari",
+            "email": "diego@lbn.com",
+            "birthDate": "1990-11-15T02:00:00.000Z",
+            "hobbies": [
+               "Pescar",
+               "Programação"
+            ]
+         },
+         {
+            "id": "2",
+            "name": "Julio",
+            "email": "julio@lbn.com",
+            "birthDate": "1990-11-15T02:00:00.000Z",
+            "hobbies": [
+               "Pescar",
+               "Programação"
+            ]
+         }
+      ],
+      "currentModule": 4,
+      "name": "TANG-na-night"
+   }
+]

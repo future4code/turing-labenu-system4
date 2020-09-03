@@ -1,4 +1,7 @@
-import { Mission } from './Mission' 
+import { Mission } from './Mission'
+import { Student } from './Student'
+import { Teacher } from './Teacher'
+
 import moment from 'moment'
 
 export class NightMission extends Mission {
@@ -6,8 +9,8 @@ export class NightMission extends Mission {
         id: string, 
         startDate: moment.Moment, 
         endDate: moment.Moment, 
-        teachers: any[],
-        students: any[],
+        teachers: Teacher[],
+        students: Student[],
         currentModule?: number | undefined
         ) {
         super(id, startDate, endDate, teachers, students, currentModule)

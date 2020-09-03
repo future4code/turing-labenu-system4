@@ -1,13 +1,14 @@
 import { Mission } from './Mission'
+import { Student } from './Student'
+import { Teacher } from './Teacher'
 
 export class FullTimeMission extends Mission {
     constructor (
-        name: string,
         id: string, 
         startDate: moment.Moment, 
         endDate: moment.Moment, 
-        teachers: any[],
-        students: any[],
+        teachers: Teacher[],
+        students: Student[],
         currentModule?: number | undefined
         ) {
         super(id, startDate, endDate, teachers, students, currentModule)
