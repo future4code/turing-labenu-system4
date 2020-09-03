@@ -1,4 +1,6 @@
 import moment from 'moment'
+import { Student } from './Student'
+import { Teacher } from './Teacher'
 
 export abstract class Mission {
     private name: string = ""
@@ -7,8 +9,8 @@ export abstract class Mission {
         private id: string,
         private startDate: moment.Moment,
         private endDate: moment.Moment,
-        private teachers: any[] = [],
-        private students: any[] = [],
+        private teachers: Teacher[] = [],
+        private students: Student[] = [],
         private currentModule: number | undefined = undefined
     ) {}
 
@@ -24,11 +26,11 @@ export abstract class Mission {
         return this.endDate
     }
 
-    public getTeachers(): any[] {
+    public getTeachers(): Teacher[] {
         return this.teachers
     }
 
-    public getStudents(): any[] {
+    public getStudents(): Student[] {
         return this.students
     }
 
@@ -36,11 +38,11 @@ export abstract class Mission {
         return this.currentModule
     }
 
-    public addTeacher(teacher: any[]): void {
+    public addTeacher(teacher: Teacher): void {
         this.teachers.push(teacher)
     }
 
-    public addStudent(student: any[]): void {
+    public addStudent(student: Student): void {
         this.students.push(student)
     }
 

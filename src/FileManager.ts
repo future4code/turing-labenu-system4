@@ -11,8 +11,8 @@ export class FileManager {
     this.filePath = path;
   }
 
-  public writeFile(data: any): void {
-    fs.writeFileSync(this.filePath, JSON.stringify(data));
+  public writeFile(data: any[]): void {
+    fs.writeFileSync(this.filePath, JSON.stringify(data, null, 3));
   }
 
   public readFile(): any {
@@ -33,7 +33,3 @@ export class FileManager {
     return this.writeFile(classI)
   }
 }
-
-
-
-
