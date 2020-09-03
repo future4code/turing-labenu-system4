@@ -13,8 +13,8 @@ export class FullTimeMission extends Mission {
         ) {
         super(id, startDate, endDate, teachers, students, currentModule)
     }
-
-    setNameMission(name: string) : void {
-        super.setNameMission(name)
+  
+    setNameMission(name: string): void {
+      super.setNameMission(name);
     }
 }

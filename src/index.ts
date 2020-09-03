@@ -1,8 +1,16 @@
-import moment from 'moment'
-import { Mission } from './Mission'
-import { FullTimeMission } from './FullTimeMission'
-import { NightMission } from './NightMission'
-import { Teacher } from './Teacher'
-import { Student } from './Student'
-import { TEACHER_SPECIALTY } from './Teacher'
-import { FileManager } from './FileManager'
+import { FileManager } from './FileManager';
+import { student1, student2, student3, student4 } from './Student';
+import { teacher1, teacher2, teacher3 } from './Teacher';
+
+const final = new FileManager('students.json');
+
+final.registerInJson(student1);
+final.registerInJson(student2);
+final.registerInJson(student3);
+final.registerInJson(student4);
+
+final.setFilePath('teachers.json');
+
+final.registerInJson(teacher1);
+final.registerInJson(teacher2);
+final.registerInJson(teacher3);
