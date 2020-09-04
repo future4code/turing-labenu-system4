@@ -1,2 +1,63 @@
-
-[]
+[
+   {
+      "id": "1",
+      "name": "Florinda",
+      "email": "florinda@gmail.com",
+      "specialties": [
+         "TESTES",
+         "CSS",
+         "REDUX"
+      ]
+   },
+   {
+      "id": "2",
+      "name": "Madruga",
+      "email": "madruga@gmail.com",
+      "specialties": [
+         "REACT",
+         "BACKEND",
+         "REDUX"
+      ]
+   },
+   {
+      "id": "3",
+      "name": "Girafales",
+      "email": "girafales@gmail.com",
+      "specialties": [
+         "TESTES",
+         "OOP"
+      ]
+   },
+   {
+      "id": "1",
+      "name": "Florinda",
+      "email": "florinda@gmail.com",
+      "birthDate": "1981-08-03T03:00:00.000Z",
+      "specialties": [
+         "TESTES",
+         "CSS",
+         "REDUX"
+      ]
+   },
+   {
+      "id": "2",
+      "name": "Madruga",
+      "email": "madruga@gmail.com",
+      "birthDate": "1980-08-03T03:00:00.000Z",
+      "specialties": [
+         "REACT",
+         "BACKEND",
+         "REDUX"
+      ]
+   },
+   {
+      "id": "3",
+      "name": "Girafales",
+      "email": "girafales@gmail.com",
+      "birthDate": "1989-08-03T03:00:00.000Z",
+      "specialties": [
+         "TESTES",
+         "OOP"
+      ]
+   }
+]
