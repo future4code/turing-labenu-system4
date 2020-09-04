@@ -12,11 +12,23 @@ final.registerInJson(student2);
 final.registerInJson(student3);
 final.registerInJson(student4);
 
+final.setFilePath('students.txt')
+
+final.registerInJson(student1);
+final.registerInJson(student2);
+final.registerInJson(student3);
+final.registerInJson(student4)
+
 final.setFilePath('teachers.json');
 
 final.registerInJson(teacher1);
 final.registerInJson(teacher2);
 final.registerInJson(teacher3);
+
+final.setFilePath('teachers.txt')
+final.registerInJson(teacher1);
+final.registerInJson(teacher2);
+final.registerInJson(teacher3)
 
 final.getStudentId("1")
 
@@ -31,6 +43,11 @@ missionTang.setNameMission("Tang")
 missionTang.addStudent(student3)
 missionTang.addStudent(student4)
 missionTang.addTeacher(teacher2)
+
+final.registerInJson(missionTuring)
+final.registerInJson(missionTang)
+
+final.setFilePath('missions.txt')
 
 final.registerInJson(missionTuring)
 final.registerInJson(missionTang)
