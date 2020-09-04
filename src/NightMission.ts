@@ -1,9 +1,7 @@
+import moment from 'moment'
 import { Mission } from './Mission'
 import { Student } from './Student'
 import { Teacher } from './Teacher'
-
-import moment from 'moment'
-import { missionTuring } from './FullTimeMission'
 
 export class NightMission extends Mission {
     constructor (

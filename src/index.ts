@@ -34,7 +34,6 @@ final.registerInJson(teacher3)
 
 final.getStudentId('1');
 
-
 final.setFilePath('missions.json');
 
 missionTuring.setNameMission('Turing');
@@ -42,7 +41,7 @@ missionTuring.addStudent(student1);
 missionTuring.addStudent(student2);
 missionTuring.addTeacher(teacher1);
 
-missionTang.setNameMission('Tang');
+missionTang.setNameMission('Tang na-night');
 missionTang.addStudent(student3);
 missionTang.addStudent(student4);
 missionTang.addTeacher(teacher2);
@@ -60,4 +59,3 @@ console.log('Estudantes:');
 print.printStudents();
 console.log('Professores:');
 print.printTeachers();
-
