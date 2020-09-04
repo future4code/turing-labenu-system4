@@ -6,7 +6,7 @@ export class Teacher implements User {
     public id: string,
     public name: string,
     public email: string,
-    private specialties: TEACHER_SPECIALTY[],
+    public specialties: TEACHER_SPECIALTY[],
   ) {}
 }
 
