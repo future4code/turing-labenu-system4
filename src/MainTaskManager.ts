@@ -14,8 +14,9 @@ export class MainTaskManager {
         `
           NOME: ${data.name}
           E-MAIL: ${data.email}
+          CURSO: 
+          TURMA: 
           IDADE: ${moment().diff(data.birthDate, 'years')} anos
-          CURSO: $
         `,
       );
     }
@@ -31,7 +32,9 @@ export class MainTaskManager {
         `
           NOME: ${data.name}
           E-MAIL: ${data.email}
+          IDADE: ${moment().diff(data.birthDate, 'years')} anos
           ESPECIALIDADES: ${data.specialties}
+
         `,
       );
     }
