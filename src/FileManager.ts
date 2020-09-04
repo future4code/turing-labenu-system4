@@ -3,7 +3,6 @@ import {Student} from "./Student";
 import {Teacher} from "./Teacher";
 import {Mission} from "./Mission";
 
-
 export class FileManager {
   constructor(private filePath: string) {}
 

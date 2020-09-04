@@ -24,6 +24,7 @@ switch (whatPrint) {
             id: ${teacher.id}
             Nome: ${teacher.name}
             Email: ${teacher.email}
+            Data de Nascimento: ${teacher.birthDate}
             Especialiadades: ${teacher.specialties}
         `)
     })  

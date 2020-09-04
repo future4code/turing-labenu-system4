@@ -2,6 +2,8 @@ import * as fs from 'fs';
 import moment from 'moment';
 import { Student } from './Student';
 import { Teacher } from './Teacher';
+import { Mission } from './Mission'
+import { FileManager } from './FileManager'
 
 export class MainTaskManager {
   public printStudents = (): void => {
@@ -10,12 +12,24 @@ export class MainTaskManager {
     );
 
     for (let data of dataStudents) {
+      let nameMission: string = ""
+
+      const dataMissions: any[] = this.getDataMissions()
+      dataMissions.forEach((mission) => {
+        const studentsMission: any[] = mission.students
+        studentsMission.forEach((student: any) => {
+          if (student.id === data.id) {
+            nameMission = mission.name
+          }
+        })
+      })
+
       console.log(
         `
           NOME: ${data.name}
           E-MAIL: ${data.email}
-          CURSO: 
-          TURMA: 
+          CURSO: Web Full Stack
+          TURMA: ${nameMission}
           IDADE: ${moment().diff(data.birthDate, 'years')} anos
         `,
       );
@@ -39,4 +53,10 @@ export class MainTaskManager {
       );
     }
   };
+
+  public getDataMissions() : Mission[] {
+    const fileManager = new FileManager('missions.json')
+    const dataMissions: Mission[] = fileManager.readFile()
+    return dataMissions
+  }
 }
